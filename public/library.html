@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <!--jQuery CDN-->
+            <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+            <!--Compiled and minified JavaScript-->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Library</title>
+  <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+  <div id="page-content-wrapper container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a class="navbar-brand">My Book Library</a>
+          <ul class="navbar-nav ml-auto mt-10 mt-lg-10">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="library.html">Library</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <h2 class="text-center">Books Information</h2>
+        <table class="table">
+          <thead>
+    <tr><th>Title</th><th>Author</th><th>Year</th><th>Publisher</th><th>Page Count</th><th>MSRP</th></tr></thead>
+    <tbody>
+    <tr><td>Cosmos</td><td>Ree Grigaut</td><td>02/02/2005</td><td>Davis Group</td><td>554</td><td>71.59</td></tr>
+    <tr><td>Legend of Sleepy Hollow, The</td><td>Nat Mackness</td><td>07/01/1992</td><td>Bruen, Aufderhar and Marks</td><td>144</td><td>39.99</td></tr>
+    <tr><td>Babysitter Wanted</td><td>Arnold Thickpenny</td><td>01/01/2010</td><td>Marvin, Bergstrom and Abernathy</td><td>656</td><td>100.00</td></tr>
+    <tr><td>Garden State</td><td>Bren Lum</td><td>05/21/1993</td><td>Kuvalis, Boyer and Rodriguez</td><td>134</td><td>9.99</td></tr>
+    </tbody>
+</table>
+<hr>
+<h2 class="text-center">Enter new books</h2>
+<form>
+  <div class="form-group">
+    <label for="booktitle">Book Title</label>
+    <input type="text" class="form-control" id="booktitle" placeholder="Enter book title">
+  </div>
+  <div class="form-group">
+    <label for="author">Author</label>
+    <input type="text" class="form-control" id="author" placeholder="Author">
+  </div>
+  <div class="form-group">
+    <label for="year">Year</label>
+    <input type="date" class="form-control" id="year">
+  </div>
+  <div class="form-group">
+    <label for="publisher">Publisher</label>
+    <input type="text" class="form-control" id="publisher" placeholder="Publisher">
+  </div>
+  <div class="form-group">
+    <label for="pagecount">Page Count</label>
+    <input type="number" class="form-control" id="pagecount" placeholder="Enter Page Count">
+  </div>
+  <div class="form-group">
+    <label for="msrp">MSRP</label>
+    <input type="number" class="form-control" min="0.01" id="msrp" placeholder="Enter the price  ">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<br>
+      </div>
+</body>
+</html>
