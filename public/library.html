@@ -36,7 +36,7 @@
     </div>
     <div class="container">
       <h2 class="text-center">Books Information</h2>
-        <table class="table">
+        <table id="booksTable" class="table">
           <thead>
     <tr><th>Title</th><th>Author</th><th>Year</th><th>Publisher</th><th>Page Count</th><th>MSRP</th></tr></thead>
     <tbody>
@@ -77,5 +77,14 @@
 </form>
 <br>
       </div>
+
+    <!-- Tablesort file reference-->
+    <script src="js/tablesort.min.js"></script>
+    <script src='tablesort.number.js'></script>
+    <script src='tablesort.date.js'></script>
+    <script>
+    <!-- Tablesort plugin from: http://tristen.ca/tablesort/demo/-->
+        new Tablesort(document.getElementById('booksTable'));
+    </script>
 </body>
 </html>
